@@ -13,7 +13,7 @@
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
+  --heading-font: "Helvetica Neue", "Segoe UI", "Roboto", "Lato", "Nunito", sans-serif;
   --nav-font: "Raleway",  sans-serif;
 }
 
@@ -958,7 +958,7 @@ section,
 .hero h2 {
   margin: 0;
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 200;
 }
 
 .hero h2 span {
