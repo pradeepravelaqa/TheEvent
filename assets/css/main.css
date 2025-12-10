@@ -530,7 +530,7 @@ h6 {
   }
 
   .mobile-nav-active .mobile-nav-toggle {
-    color: #fff;
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
     position: absolute;
     font-size: 32px;
     top: 15px;
@@ -1029,7 +1029,7 @@ section,
   /* display: inline-block; */
   /* Font Styling */
   font-family: "Brush Script MT", cursive; /* Or other calligraphy fonts */
-  font-size: 2em; /* Adjust as needed */
+  font-size: 2.5em; /* Adjust as needed */
   font-weight: normal; /* Optional: for bolder strokes */
 
   /* Gold Effect */
@@ -1042,6 +1042,7 @@ section,
   /* Optional: Text Shadow for depth */
   /* text-shadow: 2px 2px 3px rgba(0, 0, 0, 0); */
   text-shadow: 0 0 10px rgba(212,160,23,0.6);
+  text-align: center;
 }
 
 .wedding-heading-wrapper {
@@ -1571,6 +1572,8 @@ section,
 }
 
 .contact .php-email-form input[type=text],
+.contact .php-email-form input[type=number],
+.contact .php-email-form input[type=date],
 .contact .php-email-form input[type=email],
 .contact .php-email-form textarea {
   font-size: 14px;
@@ -1583,12 +1586,16 @@ section,
 }
 
 .contact .php-email-form input[type=text]:focus,
+.contact .php-email-form input[type=number]:focus,
+.contact .php-email-form input[type=date]:focus,
 .contact .php-email-form input[type=email]:focus,
 .contact .php-email-form textarea:focus {
   border-color: var(--accent-color);
 }
 
 .contact .php-email-form input[type=text]::placeholder,
+.contact .php-email-form input[type=number]::placeholder,
+.contact .php-email-form input[type=date]::placeholder,
 .contact .php-email-form input[type=email]::placeholder,
 .contact .php-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
