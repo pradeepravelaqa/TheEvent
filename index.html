@@ -457,8 +457,9 @@
       })
       .then(response => {
         if (response.ok) {
-          status.innerHTML = "✓ Thank you for choosing us! We will get back to you shortly";
+          status.innerHTML = "✓ Thank you for choosing us, we will get back to you shortly!";
           status.style.color = "purple";
+          status.style.fontWeight = "normal";  // 👈 removes bold
           form.reset();
         } else {
           status.innerHTML = "❌ Failed to send. Please try again.";
